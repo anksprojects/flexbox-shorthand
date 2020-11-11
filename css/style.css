@@ -17,7 +17,7 @@ body{
 }
 .main{padding: 1rem;height: 100vh;}
 .main .hero .hero-body .container .title {
-    font-size: 4rem;
+   
     text-align: center;
     font-family: 'popregular';
     line-height: 1.2;
