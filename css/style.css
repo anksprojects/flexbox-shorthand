@@ -84,7 +84,6 @@ body{
 
 #customers {
     font-family: 'Source Code Pro', monospace;
-    font-weight: bold;
     border-collapse: collapse;
     width: 100%;
   }
