@@ -45,7 +45,7 @@ body{
 .main .section-1  .container .button .btn-sec{
     text-decoration: none;
     color: #fa7f72;
-    font-family: 'popthin';;
+    font-family: 'popregular';
     cursor: pointer;
 }
 .main .section-1  .container .button .btn-sec:hover{
