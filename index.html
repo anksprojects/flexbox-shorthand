@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="poppins/css/poppins.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
 </head>
 
 <body>
@@ -20,35 +22,39 @@
         </div>
     </header>
     <main class="main">
-        <section class="hero flex-col-c-m ">
+        <section class="section-1 flex-c-m">
             <!-- Hero content: will be in the middle -->
-            <div class="hero-body ">
-                <div class="container">
-                    <h1 class="title">
-                        CSS flexbox is shortHanded to classes
-                    </h1>
-                    <h3 class="subtitle">
-                        Just add <span class="flex-class-span"><a data-scroll href="#docs" class="flex-class-span">flex
-                                classes</a></span> into any parent element and it's
-                        child element will be flexed easily
-                    </h3><br>
-                    <div class="button flex-col-c-m">
-                        <a class="btn" href="#">Download v~1.0.0 </a><br><br>
-                        <a data-scroll href="#docs" class="btn-sec">Read Documentation</a>
-                    </div>
 
+            <div class="container">
+                <h1 class="title">
+                    CSS flexbox is shortHanded to classes
+                </h1>
+                <h3 class="subtitle">
+                    Just add <span class="flex-class-span"><a data-scroll href="#docs" class="flex-class-span">flex
+                            classes</a></span> into any parent element and it's
+                    child element will be flexed easily
+                </h3><br>
+                <div class="button flex-col-c-m">
+                    <a class="btn" href="#">Download v~1.0.0 </a><br><br>
+                    <a data-scroll href="#docs" class="btn-sec">Read Documentation</a>
                 </div>
 
             </div>
 
+
+
         </section>
-        <section id="docs" class="flex-docs ">
+        <section id="docs" class="section-2">
             <div class="flex-class-table">
                 <div class="title">
                     <div id="chips" class="chips flex-c-m">
                         <p>flex classes</p>
                     </div>
                     <h1>Flex Classes are shorthanded like this</h1>
+                    <p style="line-height: 1.5;">These are 12 basic flexbox ShortHand classes. Later We wil make <a
+                            data-scroll href="#" class="flex-class-span">much interesting thing</a> out of these 12
+                        classes. <br> You can learn how to implement these classes <a data-scroll href="#howitworks"
+                            class="flex-class-span">here</a></p>
                 </div>
 
                 <div class="tables">
@@ -155,17 +161,68 @@
                             </td>
 
                         </tr>
+                        <tr>
+                            <td>.flex-col</td>
+                            <td> {
+                                display: flex;
+                                flex-direction: column;
+                                }
 
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>.flex-row</td>
+                            <td>{
+                                display: flex;
+                                flex-direction: row;
+                                }
+
+                            </td>
+
+                        </tr>
 
                     </table>
                 </div>
             </div>
+            <section id="howitworks" class="demo">
+                <div class="title">
+                    <div id="chips" class="chips flex-c-m">
+                        <p>How it works</p>
+                    </div>
+                    <h1>Implementing flexbox ShortHand classes</h1>
+                    <p style="line-height: 1.5;">
+                        Let's take a parent element containing a child element, like this
+                    </p>
+                    <div class="codebox">
+                        <pre class=""><code class="language-html">
+<xmp><div class="parent"> 
+    <div class="child">
+        <p>child</p>
+    </div>
+</div></xmp></code></pre>
+                    </div>
+                    <p style="line-height: 1.5;">
+                        You can make something like that after styling parent and child element(I have not added
+                        flexbox-shorthand classes yet)
+                    </p>
+                    <br><br>
+                </div>
+                <div class="flexbox-demo-screen flex-center">
+                    <div class="flexbox-container">
+                        <div class="flexbox-item">
+                            <h3 class="text-white">child</h3>
+                        </div>
+                    </div>
+                </div>
+                <p style="line-height: 1.5;">
+                    Now we are going to add those 12 basic flexbox-shorthand classes
+            </section>
         </section>
-
-
     </main>
-
+    <script src="js/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
     <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 500,
