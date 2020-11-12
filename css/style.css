@@ -1,5 +1,5 @@
 body{
-    font-family: 'popregular';
+    font-family: 'Poppins', sans-serif;font-weight:400;
     background-color: #ebebeb;
     color: #222831; 
 }
@@ -13,12 +13,12 @@ body{
 }
 .header .logo h4{
     line-height: 1;
-    font-family: 'popregular';
+    font-family: 'Poppins', sans-serif;font-weight:400;
 }
 .main{padding: 1rem;height: 100%;}
 .main .section-1   .container .title {
     text-align: center;
-    font-family: 'popregular';
+    font-family: 'Poppins', sans-serif;font-weight:400;
     line-height: 1.2;
    
 }
@@ -26,7 +26,7 @@ body{
     height: 100vh;
 }
 .main .section-1   .container .subtitle{
-    font-family: 'popthin';
+    font-family: 'Poppins', sans-serif;font-weight:300;
     line-height: 1.66;
     text-align: center;
 }
@@ -45,7 +45,7 @@ body{
 .main .section-1  .container .button .btn-sec{
     text-decoration: none;
     color: #fa7f72;
-    font-family: 'popregular';
+    font-family: 'Poppins', sans-serif;font-weight:400;
     cursor: pointer;
 }
 .main .section-1  .container .button .btn-sec:hover{
@@ -53,13 +53,13 @@ body{
     transition: 200ms ease-out;
 }
 .flex-class-span{
-    font-family:'popbold';
+    font-family: 'Poppins', sans-serif;font-weight:700;
     color: #fa7f72;
     text-decoration: none;
     cursor: pointer;
 }
 .flex-class-span:hover{
-    font-family:'popbold';
+    font-family: 'Poppins', sans-serif;font-weight:700;
     text-decoration: none;
     color: #3d5a77;
     transition: 200ms ease-in-out;
@@ -114,7 +114,7 @@ body{
 .flexbox-item {
     width: 50px;
     height: 50px;
-    font-family: 'popregular';
+    font-family: 'Poppins', sans-serif;font-weight:400;
     color: #fff;
     padding: 1rem;
     background-color: #333;
