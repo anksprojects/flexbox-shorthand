@@ -65,11 +65,12 @@
 
                         </tr>
                         <tr>
-                            <td>.flex-wrap</td>
+                            <td>.flex-center</td>
                             <td>{
                                 display: flex;
-                                flex-wrap: wrap;
-                                }</td>
+                                justify-content: center;
+                                }
+                            </td>
 
                         </tr>
                         <tr>
@@ -81,49 +82,12 @@
                             </td>
 
                         </tr>
-                        <tr>
-                            <td>.flex-center</td>
-                            <td>{
-                                display: flex;
-                                justify-content: center;
-                                }
-                            </td>
 
-                        </tr>
                         <tr>
                             <td>.flex-right</td>
                             <td>{
                                 display: flex;
                                 justify-content: flex-end;
-                                }
-
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>.flex-space-around</td>
-                            <td>{
-                                display: flex;
-                                justify-content: space-around;
-                                }
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>.flex-space-between</td>
-                            <td>{
-                                display: flex;
-                                justify-content: space-between;
-                                }
-
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>.flex-top</td>
-                            <td>{
-                                display: flex;
-                                align-items: flex-start;
                                 }
 
                             </td>
@@ -146,6 +110,35 @@
                                 display: flex;
                                 align-items: center;
 
+                                }
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>.flex-top</td>
+                            <td>{
+                                display: flex;
+                                align-items: flex-start;
+                                }
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>.flex-space-around</td>
+                            <td>{
+                                display: flex;
+                                justify-content: space-around;
+                                }
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>.flex-space-between</td>
+                            <td>{
+                                display: flex;
+                                justify-content: space-between;
                                 }
 
                             </td>
@@ -181,42 +174,259 @@
                             </td>
 
                         </tr>
+                        <tr>
+                            <td>.flex-wrap</td>
+                            <td>{
+                                display: flex;
+                                flex-wrap: wrap;
+                                }</td>
+
+                        </tr>
 
                     </table>
                 </div>
             </div>
             <section id="howitworks" class="demo">
-                <div class="title">
-                    <div id="chips" class="chips flex-c-m">
-                        <p>How it works</p>
-                    </div>
-                    <h1>Implementing flexbox ShortHand classes</h1>
-                    <p style="line-height: 1.5;">
-                        Let's take a parent element containing a child element, like this
-                    </p>
-                    <div class="codebox">
-                        <pre class=""><code class="language-html">
+                <div class="section-docs">
+                    <div class="title">
+                        <div id="chips" class="chips flex-c-m">
+                            <p>How it works</p>
+                        </div>
+                        <h1>Implementing flexbox ShortHand classes</h1>
+                        <p style="line-height: 1.5;">
+                            Let's take a parent element containing a child element, like this
+                        </p>
+                        <div class="codebox">
+                            <pre class=""><code class="language-html">
 <xmp><div class="parent"> 
     <div class="child">
         <p>child</p>
     </div>
 </div></xmp></code></pre>
+                        </div>
+                        <p style="line-height: 1.5;">
+                            You can make something like that after styling parent and child element(I have not added
+                            flexbox-shorthand classes yet) <br> Result :
+                        </p>
                     </div>
-                    <p style="line-height: 1.5;">
-                        You can make something like that after styling parent and child element(I have not added
-                        flexbox-shorthand classes yet)
-                    </p>
-                    <br><br>
-                </div>
-                <div class="flexbox-demo-screen flex-center">
-                    <div class="flexbox-container">
-                        <div class="flexbox-item">
-                            <h3 class="text-white">child</h3>
+                    <div class="flexbox-demo-screen flex-center">
+                        <div class="flexbox-container flex-wrap">
+                            <div class="flexbox-item">
+                                <h3 class="text-white">child</h3>
+                            </div>
+
+
                         </div>
                     </div>
+
                 </div>
                 <p style="line-height: 1.5;">
                     Now we are going to add those 12 basic flexbox-shorthand classes
+                </p>
+
+
+                <!-- Flex-center start -->
+                <div class="section-docs">
+
+                    <div class="title">
+                        <h1> .flex-center</h1>
+                        <p style="line-height: 1.5;">
+                            add "flex-center" class to parent
+                        </p>
+                        <div class="codebox">
+                            <pre class=""><code class="language-html">
+<xmp><div class="parent flex-right"> 
+    <div class="child">
+        <p>child</p>
+    </div>
+</div></xmp></code></pre>
+                        </div>
+                        <p style="line-height: 1.5;">
+                            See result :
+                        </p>
+                    </div>
+                    <div class="flexbox-demo-screen flex-center">
+                        <div class="flexbox-container flex-center">
+                            <div class="flexbox-item">
+                                <h3 class="text-white">child</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End  flex-center -->
+
+                <br>
+                <!-- Flex-center start -->
+                <div class="section-docs">
+
+                    <div class="title">
+                        <h1> .flex-right</h1>
+                        <p style="line-height: 1.5;">
+                            add "flex-right" class to parent
+                        </p>
+                        <div class="codebox">
+                            <pre class=""><code class="language-html">
+<xmp><div class="parent flex-center"> 
+        <div class="child">
+            <p>child</p>
+        </div>
+</div></xmp></code></pre>
+                        </div>
+                        <p style="line-height: 1.5;">
+                            See result :
+                        </p>
+                    </div>
+                    <div class="flexbox-demo-screen flex-center">
+                        <div class="flexbox-container flex-right">
+                            <div class="flexbox-item">
+                                <h3 class="text-white">child</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End  flex-center -->
+                <br>
+                <!-- Flex-left start -->
+                <div class="section-docs">
+
+                    <div class="title">
+                        <h1> .flex-left</h1>
+                        <p style="line-height: 1.5;">
+                            add "flex-left" class to parent
+                        </p>
+                        <div class="codebox">
+                            <pre class=""><code class="language-html">
+<xmp><div class="parent flex-left"> 
+    <div class="child">
+        <p>child</p>
+    </div>
+</div></xmp></code></pre>
+                        </div>
+                        <p style="line-height: 1.5;">
+                            See result :
+                        </p>
+                    </div>
+                    <div class="flexbox-demo-screen flex-left">
+                        <div class="flexbox-container flex-left">
+                            <div class="flexbox-item">
+                                <h3 class="text-white">child</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End  flex-left -->
+                <br>
+                <!-- Flex-bottom start -->
+                <div class="section-docs">
+
+                    <div class="title">
+                        <h1> .flex-bottom</h1>
+                        <p style="line-height: 1.5;">
+                            add "flex-bottom" class to parent
+                        </p>
+                        <div class="codebox">
+                            <pre class=""><code class="language-html">
+<xmp><div class="parent flex-bottom"> 
+    <div class="child">
+        <p>child</p>
+    </div>
+</div></xmp></code></pre>
+                        </div>
+                        <p style="line-height: 1.5;">
+                            See result :
+                        </p>
+                    </div>
+                    <div class="flexbox-demo-screen flex-bottom">
+                        <div class="flexbox-container flex-bottom">
+                            <div class="flexbox-item">
+                                <h3 class="text-white">child</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End  flex-bottom -->
+
+                <br>
+                <!-- Flex-middle start -->
+                <div class="section-docs">
+
+                    <div class="title">
+                        <h1> .flex-middle</h1>
+                        <p style="line-height: 1.5;">
+                            add "flex-middle" class to parent
+                        </p>
+                        <div class="codebox">
+                            <pre class=""><code class="language-html">
+<xmp><div class="parent flex-middle"> 
+    <div class="child">
+        <p>child</p>
+    </div>
+</div></xmp></code></pre>
+                        </div>
+                        <p style="line-height: 1.5;">
+                            See result :
+                        </p>
+                    </div>
+                    <div class="flexbox-demo-screen flex-middle">
+                        <div class="flexbox-container flex-middle">
+                            <div class="flexbox-item">
+                                <h3 class="text-white">child</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End  flex-middle -->
+
+                <br>
+                <!-- Flex-top start -->
+                <div class="section-docs">
+
+                    <div class="title">
+                        <h1> .flex-top</h1>
+                        <p style="line-height: 1.5;">
+                            add "flex-top" class to parent
+                        </p>
+                        <div class="codebox">
+                            <pre class=""><code class="language-html">
+<xmp><div class="parent flex-top"> 
+    <div class="child">
+        <p>child</p>
+    </div>
+</div></xmp></code></pre>
+                        </div>
+                        <p style="line-height: 1.5;">
+                            See result : It looks same like flex-left because default horizontal position is left and
+                            vertical is top here. you will see we can change both horizontal and verical positions using
+                            flexbox and we can put child element at 9 positions within the same parent element. <a
+                                data-scroll href="#docs" class="flex-class-span">See here</a></span>
+                        </p>
+                    </div>
+                    <div class="flexbox-demo-screen flex-top">
+                        <div class="flexbox-container flex-top">
+                            <div class="flexbox-item">
+                                <h3 class="text-white">child</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End  flex-top -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </section>
         </section>
     </main>

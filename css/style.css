@@ -107,7 +107,7 @@ body{
     padding: 1rem;
     background-color: #a5a5a5;
     height:300px;
-    width: 300px;
+   width: 100%;
 
 }
 
@@ -123,5 +123,11 @@ body{
 .codebox{
     background-color: #a5a5a5;
 }
-.section{}
-.footer{}
+
+.flexbox-demo-screen{
+border: 2px solid #3d5a77;
+padding: 1rem;
+}
+.section-docs{
+    background-color: #e5e5e5; padding: 1rem;
+}
